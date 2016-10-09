@@ -1,30 +1,104 @@
 #!/bin/bash
-runTest(){
-in=$1
-out=$2
-useroutfile=$3
-outfile=$4
-
-res=0;
-g++ -o main main.cpp
-if [ $? -ne 0 ];then
-res=1
-fi
-
-cat $in |./main >tmpout.txt
-if [ $? -ne 0 ];then
-res=2
-fi
-
-diff tmpout.txt $out
-if [ $? -ne 0 ];then
-res=3
-fi
-
-diff $useroutfile $outfile
-if [ $? -ne 0 ];then
-res=4
-fi
-return $res
+Err_Ok=0
+Err_Compile=1
+Err_Runtime=2
+Err_Stdout=3
+#Err_Stderr=4
+Err_Dir=5
+###
+userLog=error.log
+printErr(){
+	type=$1
+	case $type in 
+		$Err_Ok)echo "Sucess";;
+		$Err_Compile)echo "Compile Error";;
+		$Err_Runtime)echo "Runtime Error";;
+		$Err_Stdout)echo "Wrong Answer";;
+		#$Err_Stderr)echo "Wrong Stderr";;
+		$Err_Dir)echo "Output files Error";;
+	esac
 }
-runTest input1.txt output1.txt tempdata.dat outfile1.txt >error.log 2>&1
+compile(){
+	rm -f main
+	g++ -o ./main $1 >$userLog 2>&1
+	if [ $? -ne 0 ];then
+		return $Err_Compile
+	fi
+	return 0;
+}
+
+runTest(){
+	dir=$1
+	bin=$2
+	#
+	curDir=./curDir
+	targetDir=../targetDir
+	stdin=../stdin
+	stdout=../stdout
+	###
+	userStdout=../userStdout.txt
+	#userStderr=../userStderr.txt
+	res=0;
+	##
+	cp $bin $dir/$curDir
+	cd $dir/$curDir
+	curDir=./
+	## Running the program
+	#cat $stdin |./main >$userStdout 2>$userStderr
+	cat $stdin |./main >$userStdout
+	## End Running
+	if [ $? -ne 0 ];then
+		res=$Err_Runtime
+		return $res
+	fi
+
+	diff $userStdout $stdout >/dev/null 2>&1
+	if [ $? -ne 0 ];then
+		res=$Err_Stdout
+		return $res
+	fi
+
+	#diff $userStderr $stderr
+	#if [ $? -ne 0 ];then
+	#	res=$Err_Stderr
+	#	return $res
+	#fi
+
+
+	rm -f main
+	diff ./ $targetDir >/dev/null 2>&1
+	if [ $? -ne 0 ];then
+		res=$Err_Dir
+		return $res
+	fi
+	return 0;
+}
+#printErr 1
+#printErr 2
+#printErr 5
+#printErr 3
+#printErr 4
+#runTest input1.txt output1.txt tempdata.dat outfile1.txt >error.log 2>&1
+main(){
+compile $1
+res=$?;
+if [ $res -ne 0 ];then
+	return $res
+fi
+cur=`pwd`
+for i in $(ls ./test/);do
+	testCaseDir=$cur/test/$i
+	lastDir=`pwd`
+	runTest $testCaseDir $cur/main
+	res=$?
+	cd $lastDir
+	if [ $res -ne 0 ];then
+		return $res
+	fi
+done
+return 0;
+}
+main $1
+res=$?
+printErr $res
+exit $res

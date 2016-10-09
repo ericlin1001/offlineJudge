@@ -1,2 +1,3 @@
 all:*
-	./test.sh  2>error.txt
+	echo hello
+	./test.sh

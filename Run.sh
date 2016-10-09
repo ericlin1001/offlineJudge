@@ -1,7 +1,8 @@
 #!/bin/bash
 cur=`pwd`
 run=$cur/run/
-for i in $(ls ./hws/); do
+pro="problem1"
+for i in $(ls ./hws/$pro/); do
 	#echo $i
 	cd $cur/hws/$i
 	#**********begin****

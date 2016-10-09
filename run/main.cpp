@@ -15,7 +15,7 @@ out<<"\t"<<t-l<<endl;
 }
 l=t;
 }
-cout<<a/12<<endl;
-ut<<"ehl"<<endl;
+cout<<"a"<<endl;
+out<<a/12<<endl;
 return 0;
 }
