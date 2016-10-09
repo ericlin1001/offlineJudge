@@ -7,15 +7,12 @@ for i in $(ls ./hws/); do
 	#**********begin****
 	cp  main.cpp $run/
 	cd $run
-	./dotest.sh
+	./test.sh
 	res=$?
 	if [ $res -eq 0 ];then
-		echo $i:Ok
+		echo $i:Ok:$res
 	else
 		echo $i:Fails:$res
-		if [ $res -eq 1 ]; then
-			cat $run/error.log
-		fi
 	fi
 	#**********end*******
 	cd $cur

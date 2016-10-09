@@ -1,4 +1,5 @@
 #!/bin/bash
+runTest(){
 in=$1
 out=$2
 useroutfile=$3
@@ -24,4 +25,6 @@ diff $useroutfile $outfile
 if [ $? -ne 0 ];then
 res=4
 fi
-exit $res
+return $res
+}
+runTest input1.txt output1.txt tempdata.dat outfile1.txt >error.log 2>&1
