@@ -10,7 +10,7 @@ userLog=error.log
 printErr(){
 	type=$1
 	case $type in 
-		$Err_Ok)echo "Sucess";;
+		$Err_Ok)echo "Accepted";;
 		$Err_Compile)echo "Compile Error";;
 		$Err_Runtime)echo "Runtime Error";;
 		$Err_Stdout)echo "Wrong Answer";;
@@ -100,5 +100,4 @@ return 0;
 }
 main $1
 res=$?
-printErr $res
 exit $res

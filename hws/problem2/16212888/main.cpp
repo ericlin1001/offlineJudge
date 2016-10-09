@@ -16,6 +16,5 @@ out<<"\t"<<t-l<<endl;
 l=t;
 }
 cout<<a/12<<endl;
-ut<<"ehl"<<endl;
 return 0;
 }
