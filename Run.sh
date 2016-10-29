@@ -5,6 +5,8 @@ Err_Compile=1
 Err_Runtime=2
 Err_Stdout=3
 Err_Dir=5
+Err_NoMain=6
+Err_Timeout=7
 printErr(){
 	type=$1
 	case $type in 
@@ -14,6 +16,8 @@ printErr(){
 		$Err_Stdout)echo -n  "Wrong Answer";;
 		#$Err_Stderr)echo -n  "Wrong Stderr";;
 		$Err_Dir)echo -n  "Output files Error";;
+		$Err_NoMain)echo -n  "Can't Find main.cpp";;
+		$Err_Timeout)echo "Timeout Error";;
 		10)echo -n  "Can't find main.cpp";;
 	esac
 }
@@ -50,14 +54,14 @@ for i in $(ls ./hws/$pro/); do
 	rm -rf $run/*
 	cp -r ./problems/$pro/test $run/
 	cp ./scripts/test.sh $run/
-	cp ./hws/$pro/$i/main.cpp $run/
 	if [ -f "./hws/$pro/$i/main.cpp" ];then
+		cp ./hws/$pro/$i/main.cpp $run/
 		cd $run
 		./test.sh main.cpp
 		res=$?
 		cd $cur
 	else
-		res=10
+		res=$Err_NoMain
 	fi
 	if [ -f "./hws/$pro/$i/name.txt" ];then
 		name=`cat ./hws/$pro/$i/name.txt|head -n 1`

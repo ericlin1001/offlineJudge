@@ -1,3 +1,119 @@
 No.	Status	Name	Problem	Date
-16301234	Wrong Answer	Âº†‰∏â	problem1	2016-10-10_21:51
-16301234_1	Wrong Answer	Âº†‰∏â	problem1	2016-10-10_21:51
+1	Accepted	≤‚ ‘	problem1	2016-10-17_15:21
+13608089	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+15305009	Accepted	≥¬÷æ∫Ë	problem1	2016-10-17_15:21
+16301234	Timeout Error
+	èà»˝úy‘á	problem1	2016-10-17_15:21
+16301234_1	Wrong Answer	èà»˝úy‘á	problem1	2016-10-17_15:21
+16308081	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308081-1	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308084	Wrong Answer	¬Ìæ∞Õ˛	problem1	2016-10-17_15:21
+16308085	Wrong Answer	√´ø…–¿	problem1	2016-10-17_15:21
+16308085_1	Wrong Answer	√´ø…–¿	problem1	2016-10-17_15:21
+16308086	Wrong Answer	ƒ™◊⁄¡ÿ	problem1	2016-10-17_15:21
+16308086-1	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308087	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308087_1	Output files Error	UnknowName	problem1	2016-10-17_15:21
+16308088	Wrong Answer	≈∑≤˝≈Ê	problem1	2016-10-17_15:21
+16308088_1	Output files Error	≈∑≤˝≈Ê	problem1	2016-10-17_15:21
+16308088_2	Output files Error	≈∑≤˝≈Ê	problem1	2016-10-17_15:21
+16308090	Can't Find main.cpp	≈ÀÍ≈ËØ	problem1	2016-10-17_15:21
+16308090_1	Can't Find main.cpp	≈ÀÍ≈ËØ	problem1	2016-10-17_15:21
+16308090_2	Accepted	UnknowName	problem1	2016-10-17_15:21
+16308091	Accepted	UnknowName	problem1	2016-10-17_15:21
+16308092	Accepted	«‰÷ŒŒ‰	problem1	2016-10-17_15:21
+16308093	Accepted	«ÒŒƒΩ‹	problem1	2016-10-17_15:21
+16308094	Accepted	UnknowName	problem1	2016-10-17_15:21
+16308095	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308095_1	Wrong Answer	…–¿⁄	problem1	2016-10-17_15:21
+16308096	Accepted	…€µ§Ê¬	problem1	2016-10-17_15:21
+16308097	Output files Error	Ÿ‹ø°”Ó	problem1	2016-10-17_15:21
+16308098	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308100	Wrong Answer	À’ø°üˆ	problem1	2016-10-17_15:21
+16308102	Accepted	ÀÔÃÏ“∞	problem1	2016-10-17_15:21
+16308104	Can't Find main.cpp	Ã∑ ÊÊ√	problem1	2016-10-17_15:21
+16308104_1	Output files Error	Ã∑ ÊÊ√	problem1	2016-10-17_15:21
+16308105	Output files Error	Õıπ¢Èƒ	problem1	2016-10-17_15:21
+16308105_1	Output files Error	Õıπ¢Èƒ	problem1	2016-10-17_15:21
+16308105_2	Accepted	Õıπ¢Èƒ	problem1	2016-10-17_15:21
+16308106-1	Can't Find main.cpp	ÕıÍØ	problem1	2016-10-17_15:21
+16308107	Wrong Answer	Õıæ∏Ï≥	problem1	2016-10-17_15:21
+16308108	Accepted	UnknowName	problem1	2016-10-17_15:21
+16308112	Wrong Answer	Õı–≈Ω≠	problem1	2016-10-17_15:21
+16308112_1	Output files Error	Õı–≈Ω≠	problem1	2016-10-17_15:21
+16308112_2	Accepted	Õı–≈Ω≠	problem1	2016-10-17_15:21
+16308113	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308113_1	Accepted	Õı“˙≥˛	problem1	2016-10-17_15:21
+16308114	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308115	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308116	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308116_1	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308117	Output files Error	UnknowName	problem1	2016-10-17_15:21
+16308117-1	Output files Error	UnknowName	problem1	2016-10-17_15:21
+16308118	Timeout Error
+	Œ‚„¸‘∂	problem1	2016-10-17_15:21
+16308118_1	Timeout Error
+	Œ‚„¸‘∂	problem1	2016-10-17_15:21
+16308118_2	Accepted	Œ‚„¸‘∂	problem1	2016-10-17_15:21
+16308119	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308123	Accepted	–§”Ó—Ô	problem1	2016-10-17_15:21
+16308124	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308125	Accepted	–ﬁ •Ω‹	problem1	2016-10-17_15:21
+16308126	Accepted	–Ï√˚ø°	problem1	2016-10-17_15:21
+16308126-1	Accepted	UnknowName	problem1	2016-10-17_15:21
+16308126_2	Accepted	–Ï√˚ø°	problem1	2016-10-17_15:21
+16308127	Accepted	–Ì∫∆Œ¨	problem1	2016-10-17_15:21
+16308128	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308129	Wrong Answer	—œ‘∂–«	problem1	2016-10-17_15:21
+16308129_1	Accepted	—œ‘∂–«	problem1	2016-10-17_15:21
+16308131	Accepted	—Ó·‘“„	problem1	2016-10-17_15:21
+16308132	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308132_1	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308132_2	Accepted	—Óœ˛¡Â	problem1	2016-10-17_15:21
+16308133	Wrong Answer	UnknowName	problem1	2016-10-17_15:21
+16308134	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308134_1	Can't Find main.cpp	—Ó”Ò”Í	problem1	2016-10-17_15:21
+16308134_2	Can't Find main.cpp	—Ó”Ò”Í	problem1	2016-10-17_15:21
+16308134_3	Accepted	—Ó”Ò”Í	problem1	2016-10-17_15:21
+16308138	Output files Error	“∂Á˜—◊	problem1	2016-10-17_15:21
+16308144	Wrong Answer	µ‘¥∫¿⁄	problem1	2016-10-17_15:21
+16308145	Accepted	’≈∫£÷ﬁ	problem1	2016-10-17_15:21
+16308146	Accepted	’≈Ω®»Ÿ	problem1	2016-10-17_15:21
+16308147	Accepted	’≈ø≠±Í	problem1	2016-10-17_15:21
+16308148	Can't Find main.cpp	’≈√˜‘√	problem1	2016-10-17_15:21
+16308148_1	Accepted	’≈√˜‘√	problem1	2016-10-17_15:21
+1	Accepted	≤‚ ‘	problem1	2016-10-17_15:21
+16308150	Compile Error	’≈»ÙÂ˚	problem1	2016-10-17_15:21
+16308150_1	Accepted	’≈»ÙÂ˚	problem1	2016-10-17_15:21
+16308151	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:21
+16308151_1	Accepted	’≈‘¬	problem1	2016-10-17_15:21
+16308152	Wrong Answer	’≈◊”¡º	problem1	2016-10-17_15:21
+16308152_1	Wrong Answer	’≈◊”¡º	problem1	2016-10-17_15:21
+16308152_2	Wrong Answer	’≈◊”¡º	problem1	2016-10-17_15:21
+16308152_3	Wrong Answer	’≈◊”¡º	problem1	2016-10-17_15:21
+16308152_4	Accepted	’≈◊”¡º	problem1	2016-10-17_15:21
+16308153	Wrong Answer	’≈◊””∫	problem1	2016-10-17_15:21
+16308153ÈáçÊñ∞‰∫§Âç∑	Accepted	’≈◊””∫	problem1	2016-10-17_15:21
+16308154	Accepted	’‘ÍªæÍ	problem1	2016-10-17_15:21
+16308154_1	Accepted	’‘ÍªæÍ	problem1	2016-10-17_15:21
+16308155	Accepted	÷£Ω‹∫„	problem1	2016-10-17_15:21
+16308156	Accepted	÷£“¿ËØ	problem1	2016-10-17_15:21
+16308157	Wrong Answer	÷≤ø°Ë∫	problem1	2016-10-17_15:22
+16308157_1	Accepted	÷≤ø°Ë∫	problem1	2016-10-17_15:22
+16308158	Wrong Answer	÷Ïπ⁄¡ÿ	problem1	2016-10-17_15:22
+16308158_1	Wrong Answer	÷Ïπ⁄¡ÿ	problem1	2016-10-17_15:22
+16308158_2	Accepted	÷Ïπ⁄¡ÿ	problem1	2016-10-17_15:22
+16308159	Can't Find main.cpp	÷Ï√˙Û	problem1	2016-10-17_15:22
+16308159_1	Output files Error	÷Ï√˙Û	problem1	2016-10-17_15:22
+16308159_2	Compile Error	÷Ï√˙Û	problem1	2016-10-17_15:22
+16308159_3	Accepted	÷Ï√˙Û	problem1	2016-10-17_15:22
+16308160	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:22
+16308160_1	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:22
+16308160_2	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:22
+16308160_3	Wrong Answer	UnknowName	problem1	2016-10-17_15:22
+16308160_4	Wrong Answer	÷Ï«’Ïø	problem1	2016-10-17_15:22
+16308160_5	Wrong Answer	÷Ï«’Ïø	problem1	2016-10-17_15:22
+16308160_6	Accepted	÷Ï«’Ïø	problem1	2016-10-17_15:22
+16308161	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:22
+16308162	Accepted	◊Êœ˛›Ê	problem1	2016-10-17_15:22
+Êñ∞Êñá‰ª∂Â§π	Can't Find main.cpp	UnknowName	problem1	2016-10-17_15:22

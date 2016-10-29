@@ -9,16 +9,12 @@ if [  "$pro" = "" ];then
 	fi
 fi
 
-if [ ! -d ./hws/$pro ];then
-	echo "User files(./hws/$pro) DO NOT exist";
-	exit 1
-fi
 
 if [ ! -d ~/shared/anonymous/upload/$pro ];then
 	echo "Upload files(~/shared/anonymous/upload/$pro) DO NOT exist";
 	exit 1
 fi
-
+rm -r ./hws/$pro
 cp -r ~/shared/anonymous/upload/$pro ./hws/
 ./Run.sh $pro
 if [ ! -f ./hws/$pro/result.txt ];then

@@ -28,6 +28,7 @@ for i in $(ls .); do
 	cp -r curDir targetDir
 	cd targetDir
 	cp ../../../solution ./
+	ls
 	cat ../stdin|./solution >../stdout 2>../stderr
 	rm -f ./solution
 	cd ../../
