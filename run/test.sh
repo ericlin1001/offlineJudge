@@ -3,7 +3,7 @@ Err_Ok=0
 Err_Compile=1
 Err_Runtime=2
 Err_Stdout=3
-#Err_Stderr=4
+Err_Stderr=4
 Err_Dir=5
 Err_Timeout=7
 ###
@@ -15,7 +15,7 @@ printErr(){
 		$Err_Compile)echo "Compile Error";;
 		$Err_Runtime)echo "Runtime Error";;
 		$Err_Stdout)echo "Wrong Answer";;
-		#$Err_Stderr)echo "Wrong Stderr";;
+		$Err_Stderr)echo "Wrong Stderr";;
 		$Err_Dir)echo "Output files Error";;
 		$Err_Timeout)echo "Timeout Error";;
 	esac
@@ -37,17 +37,22 @@ runTest(){
 	targetDir=../targetDir
 	stdin=../stdin
 	stdout=../stdout
+	stderr=../stderr
 	###
 	userStdout=../userStdout.txt
-	#userStderr=../userStderr.txt
+	userStderr=../userStderr.txt
 	res=0;
 	##
-	cp $bin $dir/$curDir
+	if [ ! -d $dir/$curDir ];then
+		mkdir $dir/$curDir;
+	fi
+	cp $bin $dir/$curDir/
 	cd $dir/$curDir
 	curDir=./
 	## Running the program
 	#cat $stdin |./main >$userStdout 2>$userStderr
-	cat $stdin |timeout 2s ./main >$userStdout
+	cat $stdin |timeout 2s ./main >$userStdout 2>$userStderr
+	#cat $stdin |timeout 2s ./main >$userStdout
 	## End Running
 	ret=$?;
 
@@ -68,19 +73,23 @@ runTest(){
 		return $res
 	fi
 
-	#diff $userStderr $stderr
-	#if [ $? -ne 0 ];then
-	#	res=$Err_Stderr
-	#	return $res
-	#fi
+	if [ -f $stderr ];then
+	diff -ZBb $userStderr $stderr >/dev/null 2>&1
+	if [ $? -ne 0 ];then
+		res=$Err_Stderr
+		return $res
+	fi
+fi
 
 
 	rm -f main
+	if [ -d $targetDir ]; then
 	diff -ZBbr ./ $targetDir >/dev/null 2>&1
 	if [ $? -ne 0 ];then
 		res=$Err_Dir
 		return $res
 	fi
+fi
 	return 0;
 }
 #printErr 1

@@ -2,10 +2,10 @@
 pro=$1
 cur=`pwd`
 if [  "$pro" = "" ];then
-	echo "Problem Name(hit enter to use problem3)?";
+	echo "Problem Name(hit enter to use problem1)?";
 	read pro
 	if [  "$pro" = "" ];then
-		pro=problem3
+		pro=problem1
 	fi
 fi
 

@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+checkUser	ms_login.php	/^function checkUser($name){$/;"	f
+checkUserPass	ms_login.php	/^function checkUserPass($name,$pass){$/;"	f
+collect_data	ms_login.php	/^function collect_data(){$/;"	f
+db	mysql_connect.php	/^$db=new mysqli('localhost','root','ailab','onlineCheck');$/;"	v
+name	check.php	/^$name=$_POST['name'];$/;"	v
+pass	check.php	/^$pass=$_POST['password'];$/;"	v
+pass	do_register.php	/^	$pass=$_POST['password'];$/;"	v
+pass_confirm	do_register.php	/^	$pass_confirm=$_POST['password_again'];$/;"	v
+registerUser	ms_login.php	/^function registerUser($name,$pass,$studentid){$/;"	f
+res	ms_login.php	/^	$res=collect_data();$/;"	v
+res	ms_login.php	/^$res=$db->query($sql);$/;"	v
+result	ms_login.php	/^	$result=$db->query($sql);$/;"	v
+showAndGoBack	utils.php	/^function showAndGoBack($msg){$/;"	f
+showMsg	utils.php	/^function showMsg($msg,$url){$/;"	f
+sid	do_register.php	/^	$sid=$_POST['sid'];$/;"	v
+sql	ms_login.php	/^	$sql="select * from user";$/;"	v
+sql	ms_login.php	/^$sql="insert into user (username,password,student_id) values ('$name','$pass','$studentid')";$/;"	v
+user	createDatabase.sql	/^create table user (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100)NOT NULL, student_id VARCHAR(50), PRIMARY KEY (id));$/;"	t
+user	do_register.php	/^	$user=$_POST['name'];$/;"	v
+user.id	createDatabase.sql	/^create table user (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100)NOT NULL, student_id VARCHAR(50), PRIMARY KEY (id));$/;"	F
+user.password	createDatabase.sql	/^create table user (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100)NOT NULL, student_id VARCHAR(50), PRIMARY KEY (id));$/;"	F
+user.student_id	createDatabase.sql	/^create table user (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100)NOT NULL, student_id VARCHAR(50), PRIMARY KEY (id));$/;"	F
+user.username	createDatabase.sql	/^create table user (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100)NOT NULL, student_id VARCHAR(50), PRIMARY KEY (id));$/;"	F

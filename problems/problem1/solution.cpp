@@ -2,19 +2,22 @@
 #include<fstream>
 using namespace std;
 int main(){
-	double t,l,a=0;
-	ofstream out("tempdata.dat");
-	for(int i=0;i<12;i++){
-		cin>>t;
-		a+=t;
-		out<<t;
-		if(i!=0){
-			out<<"\t"<<t-l<<endl;
-		}else{
-			out<<endl;
-		}
-		l=t;
+	ifstream in("a.txt");
+	ofstream out("b.txt");
+	if(!in.is_open()){
+		cerr<<"Can't open file: a.txt"<<endl;
+		return 0;
 	}
-	cout<<a/12<<endl;
+	if(!out.is_open()){
+		cerr<<"Can't open file: b.txt"<<endl;
+		return 0;
+	}
+	int a;
+	in>>a;
+	cout<<a<<endl;
+	a+=10;
+	out<<a;
+	in.close();
+	out.close();
 	return 0;
 }
